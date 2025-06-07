@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Samantha Nguyen"
+		]
+	},
+	"semanticversion-desc": "A MediaWiki extension that provides a parser function for comparing two semantic versions"
+}

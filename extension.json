@@ -1,0 +1,32 @@
+{
+	"name": "SemanticVersion",
+	"version": "1.0.0",
+	"author": [
+		"Samantha Nguyen"
+	],
+	"license-name": "MIT",
+	"url": "https://www.mediawiki.org/wiki/Extension:SemanticVersion",
+	"descriptionmsg": "semanticversion-desc",
+	"type": "other",
+	"MessagesDirs": {
+		"SemanticVersion": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"SemanticVersionMagic": "SemanticVersion.i18n.magic.php"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\SemanticVersion\\": "src/"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "main"
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "MediaWiki\\Extension\\SemanticVersion\\Hooks",
+			"factory": "MediaWiki\\Extension\\SemanticVersion\\Hooks::factory"
+		}
+	},
+	"manifest_version": 2
+}
