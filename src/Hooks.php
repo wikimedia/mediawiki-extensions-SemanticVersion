@@ -6,9 +6,6 @@ use Composer\Semver\Comparator;
 use MediaWiki\Hook\ParserFirstCallInitHook;
 use MediaWiki\Parser\Parser;
 
-/**
- * Hooks for SemanticVersion extension
- */
 class Hooks implements ParserFirstCallInitHook {
 	public static function factory(): self {
 		return new self();
@@ -20,9 +17,6 @@ class Hooks implements ParserFirstCallInitHook {
 		return true;
 	}
 
-	/**
-	 * Function hook for handling the magic word logic of `semver`
-	 */
 	public function onFunctionHook(
 		Parser $parser,
 		string $operatorStr,

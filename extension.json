@@ -7,7 +7,7 @@
 	"license-name": "MIT",
 	"url": "https://www.mediawiki.org/wiki/Extension:SemanticVersion",
 	"descriptionmsg": "semanticversion-desc",
-	"type": "other",
+	"type": "parserhook",
 	"MessagesDirs": {
 		"SemanticVersion": [
 			"i18n"
